@@ -1,4 +1,4 @@
-- hosts: docker
-  become: yes
+- name: Install Docker
+  hosts: docker
   roles:
-    docker-check
+    - docker-check
