@@ -1,2 +1,6 @@
 ---
 # tasks file for docker-check
+- name: Check whether docker-ce is installed
+  command: rpm -q docker-ce
+  register: result
+  
